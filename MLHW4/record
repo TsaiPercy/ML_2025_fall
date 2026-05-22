@@ -1,0 +1,59 @@
+first_test:
+have ==> transforms.ColorJitter(brightness=0.2, contrast=0.2),
+0.99514
+batch_size=32
+num_epochs = 10
+Tmax = 10
+
+2nd_test:
+no transforms.ColorJitter(brightness=0.2, contrast=0.2),
+0.99686
+batch_size=32
+num_epochs = 10
+Tmax = 10
+
+
+
+
+1st_test_b5:
+batch_size=8
+0.99937
+num_epochs = 10
+Tmax = 10
+
+
+1st_test_b7:
+batch_size=2
+num_epochs = 5
+Tmax = 10
+0.99469
+
+
+1st_test_b6:
+batch_size=8
+num_epochs = 1
+Tmax = num_epochs
+get best_val_acc
+
+
+2nd_test_b6
+batch_size=8
+num_epochs = 10
+Tmax = num_epochs
+get best_val_acc
+0.99968
+
+
+5_b5_pseudo:
+batch_size=8
+pseudo 4~6
+num_epochs = 10
+Tmax = 10
+
+
+3rd_test_b5: (no this part)
+batch_size=16
+num_epochs = 10
+Tmax = 10
+no pseudo
+
