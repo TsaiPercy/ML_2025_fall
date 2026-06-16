@@ -1,0 +1,18 @@
+uv run flake8 .\main.py
+uv run pytest .\test_main.py -s
+
+
+uv init
+uv pip freeze > .\requirements.txt
+uv add -r .\requirements.txt   
+
+
+
+uv sync — 同步環境與鎖檔
+📌 用途：
+
+讓目前虛擬環境（.venv）跟 uv.lock 中版本完全一致
+
+若 .venv 不存在，會自動建立
+
+若有變更（例如鎖檔或依賴不同），會安裝或移除套件

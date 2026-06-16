@@ -3,3 +3,9 @@ data
 *.pth
 
 *.pyc
+
+submit/
+
+*.docx
+
+*.zip
